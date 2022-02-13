@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tab icon -->
+    <link rel="icon" type="image/x-icon" href="download.jpg">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="suggestion.css">
+    <link rel="script" href="script.js">
+    <!--font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <!-- javascript  -->
+    <script>
+        function function1() {
+            let a = document.getElementById("name1").value;
+            let b = document.getElementById("name2").value;
+            let c = document.getElementById("sug").value;
+            if (a != null && a != "" && b != null && b != "" && c != null && c != "") {
+                alert("Form Submitted successfully !");
+            } else {
+                alert("Please fill all the fields to submit this form !");
+            }
+
+        }
+    </script>
+    <!--end javascript  -->
+    <!-- title -->
+
+    <title>Suggestion</title>
+</head>
+
+<body>
+    <!-- hero html  -->
+    <section class="box container">
+        <div class="hero">
+            <h3 id="header">SUGGESTIONS</h3>
+            <div id="left">
+                <h3>Feel free to ask us anything!</h3>
+                <p> Have doubt or suggestion to make? Feel free to ask anything. If you have any suggestions, please let us know. Your suggestions are highly appreciated. We appreciate your time and try hard to reply to every single message posted here! Keep
+                    dropping your priceless opinions.</p>
+            </div>
+            <div id="right">
+                <form name="myform" onsubmit="return function1()">
+                    <h4>Full Name:</h4>
+                    <input class="firstname" type="text" placeholder="e.g/ firstname lastname" id="name1">
+                    <h4>Email:</h4>
+                    <input class="email" type="email" placeholder="e.g/ example@gmail.com" id="name2">
+                    <h4>Suggestion:</h4>
+                    <textarea id="sug" cols="30" rows="10" placeholder="e.g/ Lorem ipsum dolor sit......."></textarea>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--end hero html  -->
+    <!-- footer html  -->
+    <footer>
+        <div class="container footer">
+            <p>Copyright © 2022 group-portfolio. All rights reserved</p>
+        </div>
+    </footer>
+    <!-- end footer html  -->
+</body>
+
+</html>

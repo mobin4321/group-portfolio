@@ -1,0 +1,162 @@
+    @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    html {
+        font-family: Century Gothic;
+        color: white;
+    }
+    
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    span {
+        color: tomato;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        height: 100%;
+    }
+    /* suggestion css  */
+    
+    .sug {
+        position: fixed;
+        right: 3vw;
+        top: 3rem;
+        opacity: 0.7;
+        z-index: 2;
+        padding: 20px 10px;
+        overflow: hidden;
+    }
+    
+    .sug-item {
+        border: 1px solid rgb(240, 204, 197);
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        margin: 4px;
+        transition: 0.6s;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: rgb(240, 204, 197);
+        transition: 0.6s;
+    }
+    
+    .sug-item:hover {
+        opacity: 1;
+        color: tomato;
+        opacity: 1;
+    }
+    /* end suggestion css  */
+    /* hero css */
+    
+    #hero {
+        background: url(1.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        text-transform: uppercase;
+    }
+    
+    #hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.4;
+        z-index: -1;
+    }
+    
+    .hero-item {
+        margin-left: 50px;
+    }
+    
+    .hero-item h1 {
+        font-size: 2.5rem;
+    }
+    
+    .cta {
+        display: flex;
+        flex-direction: row;
+        margin-top: 16px;
+    }
+    
+    .cta a {
+        width: fit-content;
+        border: 1px solid white;
+        margin: 4px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        transition: 0.6s;
+        font-weight: bold;
+    }
+    
+    .cta a:hover {
+        color: tomato;
+        background-color: rgb(240, 204, 197);
+        border: 1px solid rgb(240, 204, 197);
+    }
+    /* end hero css */
+    /* footer css  */
+    
+    .footer {
+        min-height: 2.5rem;
+        color: black;
+        background-color: rgb(73, 72, 72);
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .footer p {
+        margin: 10px;
+    }
+    /*end footer css  */
+    /* media queries */
+    
+    @media only screen and (min-width:1200px) {
+        .hero-item h1 {
+            font-size: 3.5rem;
+        }
+        a {
+            font-size: 1rem;
+        }
+    }
+    
+    @media only screen and (max-width:382px) {
+        .hero-item h1 {
+            font-size: 2rem;
+        }
+        .hero-item {
+            margin-left: 10px;
+        }
+    }
+    
+    @media only screen and (max-width:450px) {
+        .cta {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    /*end media queries */
